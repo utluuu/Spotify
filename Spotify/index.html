@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        .accordion button{
+            background-color: #121212!important;
+            color: #fff!important;
+        }
+        .accordion button::after{
+            background-color: #121212!important;
+        }
+
+      
+        .body {
+          background-color: #121212;
+          color: white;
+          font-family: Arial, sans-serif;
+        }
+        .plan-card {
+          border-radius: 10px;
+          padding: 20px;
+          background-color: #1c1c1c;
+          margin: 10px;
+        }
+        .btn-custom {
+          width: 100%;
+          border-radius: 20px;
+          font-weight: bold;
+          padding: 10px;
+        }
+        .bireysel-btn { background-color: #ffb6c1; }
+        .ogrenci-btn { background-color: #c8a2c8; }
+        .duo-btn { background-color: #fbc02d; }
+        .aile-btn { background-color: #90caf9; }
+  
+    </style>
+
+
+</head>
+    <body style="background-color:#121212;" class="text-white px=3">
+        
+        <nav class="navbar navbar-expand-lg text-white">
+            <div class="container-md">
+                <a class="navbar-brand d-flex align-items-center text-white font-weight-bold" href="#">
+                 <i class="bi bi-spotify me-2"></i> Spotify
+                </a>
+                <div>
+             <a class="navbar-brand text-white font-weight-bold" href="#"> Premium</a>
+             <a class="navbar-brand text-white font-weight-bold" href="#">Destek</a>
+             <a class="navbar-brand text-white font-weight-bold" href="#">İndir</a>
+          </div>
+        </div>
+        </nav>
+
+        <section class="container-md py-5">
+            <img class="position-absolute" src="img/backgroundSpotify.png" style="width: 65;top:70px;right:0;z-index:-1;">
+            <div class="w-50">
+                <h1 class="font-weight-bold">
+                    Sınırlar olmadan dinle. Premium Bireysel planını dene: İlk 1 ay ₺0.
+                </h1>
+                <h2 class="fs-6 font-weight-light">
+                    Sonra yalnızca ₺59,99/ay. İstediğin zaman iptal et.
+                </h2>
+
+            </div>
+
+            <div class="d-flex mt-5 ">
+                <button class="rounded-pill btn btn-danger">
+                    Premiumu edin
+                </button>
+                <button class="rounded-pill btn btn-secondary ml-3">
+                    Tüm planları görüntüle
+                </button>
+            </div>
+
+            <div class="w-50 mt-3">
+                <p class="font-weight-light w-50" style="font-size: 12px;">İlk 1 ay boyunca ücretsiz, sonra ayda ₺59,99. Sadece Premium'u daha önce denememiş kişiler tekliften yararlanabilir. Koşullar geçerlidir.</p>
+
+            </div>
+        
+        </section>
+
+        <section class="container  py-5 mt-3">
+            <div class="text-center">
+                <h2 class="font-weight-bold">Farkı keşfet</h2>
+                <p class="font-size-small">Premium'a geç ve dinleyeceğine yalnızca sen karar ver. İstediğin zaman iptal et.</p>
+            </div>
+
+            <div class="container py-5">
+                <table class="table font-weight-dark text-white">
+                    <thead>
+                        <tr>
+                        <th scope="col">Elde edeceğin avantajlar</th>
+                        <th scope="col">Spotify'ın Free planı</th>
+                        <th scope="col">  <i class="bi bi-check-circle"></i>
+                            Spotify'ın Premium planları</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Reklamsız müzik dinle</td>
+                        <td>--</td>
+                        <td><i class="bi bi-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                        
+                        <td>İndir ve çevrimdışı dinle</td>
+                        <td>--</td>
+                            <td><i class="bi bi-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                        
+                        <td>Şarkıları istediğin sırada çal</td>
+                        <td>--</td>
+                        <td><i class="bi bi-check-circle"></i></td>
+                        </tr>
+
+                        <td>Yüksek ses kalitesi</td>
+                        <td>--</td>
+                        <td><i class="bi bi-check-circle"></i></td>
+                        </tr>
+                        <tr>
+
+                        <td>Arkadaşlarınla aynı anda dinle</td>
+                        <td>--</td>
+                            <td><i class="bi bi-check-circle"></i></td>
+                        </tr>
+                        <tr>
+
+                        <td>Arkadaşlarınla aynı anda dinle</td>
+                        <td>--</td>
+                            <td><i class="bi bi-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                    </table>
+            </div>
+        </section>
+
+
+        <div class="container py-5">
+    <div class="row justify-content-center">
+      
+      
+      <div class="col-md-3 plan-card">
+        <p class="text-white-50">İlk 1 ay boyunca ücretsiz</p>
+        <h4>Bireysel</h4>
+        <p>Sonra ayda ₺59,99</p>
+        <ul>
+          <li>1 Premium hesabı</li>
+          <li>İstediğin zaman iptal et</li>
+        </ul>
+        <button class="btn btn-custom bireysel-btn">Premium'u edin</button>
+      </div>
+
+      
+      <div class="col-md-3 plan-card">
+        <p class="text-white-50">İlk 1 ay boyunca ücretsiz</p>
+        <h4>Öğrenci</h4>
+        <p>Sonra ayda ₺32,99</p>
+        <ul>
+          <li>Doğrulanmış 1 Premium hesabı</li>
+          <li>Koşulları sağlayan öğrenciler için indirim</li>
+          <li>İstediğin zaman iptal et</li>
+        </ul>
+        <button class="btn btn-custom ogrenci-btn">Premium'u edin</button>
+      </div>
+
+    
+      <div class="col-md-3 plan-card">
+        <h4>Duo</h4>
+        <p>₺79,99 / ay</p>
+        <ul>
+          <li>2 Premium hesap</li>
+          <li>İstediğin zaman iptal et</li>
+        </ul>
+        <button class="btn btn-custom duo-btn">Premium Duo planını edin</button>
+      </div>
+
+      
+      <div class="col-md-3 plan-card">
+        <h4>Aile</h4>
+        <p>₺99,99 / ay</p>
+        <ul>
+          <li>6 Premium hesabı</li>
+          <li>Sakıncalı içerikleri kontrol et</li>
+          <li>İstediğin zaman iptal et</li>
+        </ul>
+        <button class="btn btn-custom aile-btn">Premium Aile planını edin</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  
+
+  <section class="container py-5" style="background-color: #121212;">
+  <div class="text-center text-white mb-4">
+    <h2 class="font-weight-bold">Soruların mı var?</h2>
+    <p style="font-size: 13px;">Yanıtları bizde</p>
+    <p style="font-size: 13px;">
+      <a href="#" style="color: #fff; text-decoration: underline;">Destek Sitemizde</a> sorularının yanıtlarını bulabilirsin.
+    </p>
+  </div>
+
+  <div id="accordion">
+    <div class="card bg-dark border-0 mb-2">
+      <div class="card-header p-0" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link d-block text-left text-white w-100" 
+                  style="text-decoration: none;" 
+                  data-toggle="collapse" 
+                  data-target="#collapseOne" 
+                  aria-expanded="true" 
+                  aria-controls="collapseOne">
+            Spotify Premium teklifi nasıl işler?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body text-white">
+          Premium'u daha önce kullanmadıysan ücretsiz (veya düşük fiyatlı) bir tekliften yararlanabilirsin.
+          Öncelikle geçerli bir ödeme yöntemi girerek üye olman gerekir. Üye olmadan önce herhangi bir teklif için uygun olup olmadığını görüntüleyebilirsin. Teklifin sona ermeden 7 gün önce sana hatırlatma göndeririz. Bulunduğun ülkedeki kısıtlamalar ve hükümler geçerlidir.
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-dark border-0 mb-2">
+      <div class="card-header p-0" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link d-block text-left text-white w-100 collapsed" 
+                  style="text-decoration: none;" 
+                  data-toggle="collapse" 
+                  data-target="#collapseTwo" 
+                  aria-expanded="false" 
+                  aria-controls="collapseTwo">
+            Premium planımı nasıl iptal edebilirim?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body text-white">
+          Premium planını dilediğin zaman çevrimiçi olarak hesap sayfandan kolayca iptal edebilirsin. Premium planın sonraki fatura tarihine kadar iptal edilmez. Bu tarihten sonra hesabın ücretsiz planımıza geçer.
+          Ücretsiz hesaba geçtiğinde çalma listelerinle kaydettiğin müzikler sende kalır ve dinlerken reklamları duyarsın.
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-dark border-0 mb-2">
+      <div class="card-header p-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link d-block text-left text-white w-100 collapsed" 
+                  style="text-decoration: none;" 
+                  data-toggle="collapse" 
+                  data-target="#collapseThree" 
+                  aria-expanded="false" 
+                  aria-controls="collapseThree">
+            Premium Duo planı nasıl çalışır?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body text-white">
+          Premium Duo, birlikte yaşayan 2 kişinin yararlanabileceği bir plandır. İki ayrı Premium Bireysel hesabı için tam fiyat ödemekten daha ekonomiktir. Aynı adreste yaşadığını onaylamak için adresini isteriz. Satın alma işleminden sonra plana üye davet edebilirsin. Her üyenin ayrı birer Premium hesabı olur ve kendi hesabıyla aynı anda dinleyebilir. Herkesin kendi kayıtlı müziği ve çalma listeleri kendisinde kalır. Diğer hesap sahibi senin ne dinlediğini göremez.
+         <p class="my-3">Premium Duo hakkında <a href="#" class="text-white">daha fazla bilgi edin.</a></p> 
+        </div>
+      </div>
+    </div>
+     
+    <div class="card bg-dark border-0 mb-2">
+      <div class="card-header p-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link d-block text-left text-white w-100 collapsed" 
+                  style="text-decoration: none;" 
+                  data-toggle="collapse" 
+                  data-target="#collapseThree" 
+                  aria-expanded="false" 
+                  aria-controls="collapseThree">
+            Premium Aile planı nasıl çalışır?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body text-white">
+          Premium Aile, birlikte yaşayan en fazla 6 aile üyesinin yararlanabileceği bir plandır. Herkesin kendi Premium Bireysel hesabı için tam fiyat ödemekten daha ekonomiktir. Aynı adreste yaşadığını onaylamak için adresini isteriz. Satın alma işleminden sonra plana üye davet edebilirsin. Her üyenin ayrı birer Premium hesabı olur ve kendi hesabıyla aynı anda dinleyebilir. Herkesin kendi kayıtlı müziği ve çalma listeleri kendisinde kalır. Diğer hesap sahipleri ne dinlediğini göremezler.
+
+         <p class="my-3">Premium Aile<a href="#" class="text-white">daha fazla bilgi edin.</a></p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-dark border-0 mb-2">
+      <div class="card-header p-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link d-block text-left text-white w-100 collapsed" 
+                  style="text-decoration: none;" 
+                  data-toggle="collapse" 
+                  data-target="#collapseThree" 
+                  aria-expanded="false" 
+                  aria-controls="collapseThree">
+            Premium Öğrenci planı nasıl çalışır?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body text-white">
+          Geçerli bir yüksekokulda veya üniversitede kayıtlı olan bir öğrenciysen ve 18 yaşından büyüksen yararlanabilirsin. Premium Öğrenci'yi 4 yıla kadar kullanabilirsin.
+         <p class="my-3">Premium Öğrenci hakkında<a href="#" class="text-white">daha fazla bilgi edin.</a></p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-dark border-0 mb-2">
+      <div class="card-header p-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link d-block text-left text-white w-100 collapsed" 
+                  style="text-decoration: none;" 
+                  data-toggle="collapse" 
+                  data-target="#collapseThree" 
+                  aria-expanded="false" 
+                  aria-controls="collapseThree">
+            Spotify Premium'un Türkiye dahilindeki ücreti nedir?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body text-white">
+          Türkiye dahilindeki Spotify Premium fiyatları, seçtiğin Premium planına bağlı olarak farklılık gösterir: Spotify Premium Bireysel planı /ay ₺59,99, Premium Duo planı /ay ₺79,99, Premium Aile planı /ay ₺99,99, Premium Öğrenci planı ise /ay ₺32,99 tutarındadır. Daha önce bir Premium planını kullanmadıysan ücretsiz (veya düşük fiyatlı) bir tekliften yararlanabilirsin. Bulunduğun ülkedeki kısıtlamalar ve hükümler geçerlidir.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="footer container-fluid py-4 px-2 col-md" style="background-color: #121212;">
+  <div class="container">
+    <div class="row mb-4 align-items-center">
+      <div class="col-6">
+        <i class="bi bi-spotify text-white " style="font-size: 2rem;"></i>
+        <h3 class="font-weight-bold text-white d-inline-block ml-2">Spotify</h3>
+      </div>
+
+      <div class="col-6 d-flex justify-content-end">
+        <a href="#" class="text-white ml-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+        <a href="#" class="text-white ml-3"><i class="bi bi-twitter-x" style="font-size: 1.5rem;"></i></a>
+        <a href="#" class="text-white ml-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+      </div>
+    </div>
+
+    <div class="row text-white">
+      <div class="col-6 col-md">
+        <p class="font-weight-bold text-secondary">Şirket</p>
+        <ul class="list-unstyled">
+          <li>Hakkında</li>
+          <li>Kariyer</li>
+          <li>For the record</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <p class="font-weight-bold text-secondary">Topluluklar</p>
+        <ul class="list-unstyled">
+          <li>Sanatçılar İçin</li>
+          <li>Geliştiriciler</li>
+          <li>Reklam</li>
+          <li>Yatırımcılar</li>
+          <li>Satıcılar</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <p class="font-weight-bold text-secondary">Yararlı bağlantılar</p>
+        <ul class="list-unstyled">
+          <li>Destek</li>
+          <li>Web Çalar</li>
+          <li>Ücretsiz Mobil Uygulama</li>
+          <li>Import your music</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <p class="font-weight-bold text-secondary">Spotify Planları</p>
+        <ul class="list-unstyled">
+          <li>Premium Bireysel</li>
+          <li>Premium Duo</li>
+          <li>Premium Aile</li>
+          <li>Premium Öğrenci</li>
+          <li>Spotify Free</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   
+</div>
+
+
+        
+
+
+
+
+
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
